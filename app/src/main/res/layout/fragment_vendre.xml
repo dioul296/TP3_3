@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    tools:context=".Vendre">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/activity_vertical_margin">
+            <ImageView
+                android:id="@+id/ImageVVendre"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/ic_add_a_photo_black_24dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CRITERES"
+                android:textColor="@color/colorRouge1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="MARQUE"
+                android:textSize="10dp" />
+
+            <Spinner
+                android:id="@+id/spinnerMarque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MODELE"
+                android:textSize="10dp" />
+
+            <Spinner
+                android:id="@+id/spinnerModele"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ANNEE-MODELE"
+                android:textSize="10dp" />
+
+            <Spinner
+                android:id="@+id/spinnerAnneeModele"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TRANSMISSION"
+                android:textSize="10dp" />
+
+            <Spinner
+                android:id="@+id/spinnerTransmission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KILOMETRAGE"
+                android:textSize="10dp" />
+
+            <EditText
+                android:id="@+id/editKilom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRIX"
+                android:textSize="10dp" />
+
+            <EditText
+                android:id="@+id/editTextPrix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"></EditText>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="INFORMATION SUR LE VENDEUR"
+                    android:textColor="@color/colorRouge1" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ETES VOUS PROPRIETAIRE DE LA VOITURE ?"
+                    android:textSize="10dp" />
+                <Spinner
+                    android:id="@+id/spinnerProprietaire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Spinner>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="NOM"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/editNom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DIALLO"></EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PRENOM"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/editPrenom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MAMADOU DIOULDE"></EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="EMAIL"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="mamadou-dioulde.diallo.4@ulaval.ca"></EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DESCRITPTION"
+                    android:textColor="@color/colorRouge1" />
+
+                <EditText
+                    android:id="@+id/editDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></EditText>
+
+                <Button
+                    android:id="@+id/buttonTerminer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:text="Terminer" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
